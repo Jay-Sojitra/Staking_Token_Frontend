@@ -70,7 +70,8 @@ const Home = ({ contract, account }) => {
 
         try {
             const amount = ethers.utils.parseEther(mintingAmount.toString());
-            await contract.mint(amount);
+            await (await contract.mint(amount)).wait();
+            await getUserBalance();
             setMintingAmount('');
         } catch (error) {
             window.alert(error.data.message);
