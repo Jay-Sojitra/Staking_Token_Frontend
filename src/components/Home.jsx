@@ -110,7 +110,7 @@ const Home = ({ contract, account }) => {
 
             <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', marginTop: '15px', border: '0px solid black', padding: '84px', backgroundColor: 'aliceblue', boxShadow: '0 8px 16px 0 rgba(0,0,0,0.2)' }}>
                 <h2 style={{ color: 'darkred' }}>{tokenName}</h2>
-
+                <h2>Hello JAY !! Congatulation✨</h2>
                 <h3>Stake Balance : {stakeBalance ? stakeBalance : "Loading..."} Token</h3>
                 <h3>Your Balance : {userBalance ? userBalance : 'Loading...'} Token </h3>
                 <hr />
